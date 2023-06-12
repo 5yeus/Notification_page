@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -522,7 +522,161 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-red-400 {
+.m-0 {
+  margin: 0px;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[1\.5625rem\] {
+  height: 1.5625rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[2rem\] {
+  width: 2rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.rounded-\[\] {
+  border-radius: ;
+}
+
+.rounded-\[0\.\] {
+  border-radius: 0.;
+}
+
+.rounded-\[0\.2\] {
+  border-radius: 0.2;
+}
+
+.rounded-\[0\.2rem\] {
+  border-radius: 0.2rem;
+}
+
+.bg-\[\#f2f2f2\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+}
+
+.bg-carnation {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 83 81 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-cat-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 49 123 / var(--tw-bg-opacity));
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.font-jakarta {
+  font-family: Plus Jakarta Sans, sans-serif;
+}
+
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
+}
+
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.leading-\[\] {
+  line-height: ;
+}
+
+.leading-\[1\.25rem\] {
+  line-height: 1.25rem;
+}
+
+.leading-\[1\.5625rem\] {
+  line-height: 1.5625rem;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[1\] {
+  color: 1;
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-shuttle-gray {
+  --tw-text-opacity: 1;
+  color: rgb(94 103 120 / var(--tw-text-opacity));
+}
+
+.children\:mx-\[1\.9375rem\]>* {
+  margin-left: 1.9375rem;
+  margin-right: 1.9375rem;
 }
