@@ -554,28 +554,12 @@ video {
   height: 2.8125rem;
 }
 
-.h-\[52\.4375rem\] {
-  height: 52.4375rem;
-}
-
-.h-\[\] {
-  height: ;
+.h-\[56\.8rem\] {
+  height: 56.8rem;
 }
 
 .h-\[6\.0625rem\] {
   height: 6.0625rem;
-}
-
-.h-\[55rem\] {
-  height: 55rem;
-}
-
-.h-\[57rem\] {
-  height: 57rem;
-}
-
-.h-\[56\.8rem\] {
-  height: 56.8rem;
 }
 
 .min-h-screen {
@@ -598,6 +582,10 @@ video {
   width: 38.625rem;
 }
 
+.w-\[45rem\] {
+  width: 45rem;
+}
+
 .w-\[60\%\] {
   width: 60%;
 }
@@ -610,32 +598,36 @@ video {
   width: ;
 }
 
-.w-\[35\.375rem\] {
-  width: 35.375rem;
+.w-\[2\.1\] {
+  width: 2.1;
 }
 
-.w-\[50rem\] {
-  width: 50rem;
+.w-\[2\.81\] {
+  width: 2.81;
 }
 
-.w-\[45rem\] {
-  width: 45rem;
+.w-\[2\.812\] {
+  width: 2.812;
+}
+
+.w-\[3rem\] {
+  width: 3rem;
+}
+
+.w-\[\.rem\] {
+  width: .rem;
+}
+
+.w-\[rem\] {
+  width: rem;
+}
+
+.w-\[3\.5rem\] {
+  width: 3.5rem;
 }
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.grid-rows-\[2rem_46\.5625rem\] {
-  grid-template-rows: 2rem 46.5625rem;
-}
-
-.grid-rows-\[2rem_50rem\] {
-  grid-template-rows: 2rem 50rem;
-}
-
-.grid-rows-\[2rem_51rem\] {
-  grid-template-rows: 2rem 51rem;
 }
 
 .grid-rows-\[2rem_50\.5rem\] {
@@ -674,20 +666,28 @@ video {
   gap: 1rem;
 }
 
-.gap-y-4 {
-  row-gap: 1rem;
+.gap-\[\] {
+  gap: ;
 }
 
-.gap-y-6 {
-  row-gap: 1.5rem;
+.gap-\[8rem\] {
+  gap: 8rem;
+}
+
+.gap-\[3rem\] {
+  gap: 3rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
 }
 
 .gap-y-3 {
   row-gap: 0.75rem;
 }
 
-.gap-y-2 {
-  row-gap: 0.5rem;
+.gap-y-6 {
+  row-gap: 1.5rem;
 }
 
 .rounded-\[0\.2rem\] {
@@ -713,11 +713,6 @@ video {
 .border-\[\#E6C033\] {
   --tw-border-opacity: 1;
   border-color: rgb(230 192 51 / var(--tw-border-opacity));
-}
-
-.border-\[\#905C5A\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(144 92 90 / var(--tw-border-opacity));
 }
 
 .border-botticelli {
@@ -814,8 +809,8 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\] {
-  color: ;
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
 
 .hover\:bg-link-water:hover {
@@ -835,4 +830,56 @@ video {
 
 .children\:p-4>* {
   padding: 1rem;
+}
+
+@media (min-width: 200px) and (max-width: 427px) {
+  .mobile\:flex {
+    display: flex;
+  }
+
+  .mobile\:w-\[\] {
+    width: ;
+  }
+
+  .mobile\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .mobile\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .mobile\:w-\[100\] {
+    width: 100;
+  }
+
+  .mobile\:w-full {
+    width: 100%;
+  }
+
+  .mobile\:w-\[21\.4375rem\] {
+    width: 21.4375rem;
+  }
+
+  .mobile\:flex-col {
+    flex-direction: column;
+  }
+
+  .mobile\:gap-4 {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 770px) {
+  .laptop\:h-\[56\.8rem\] {
+    height: 56.8rem;
+  }
+
+  .laptop\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .laptop\:grid-rows-\[2rem_50\.5rem\] {
+    grid-template-rows: 2rem 50.5rem;
+  }
 }

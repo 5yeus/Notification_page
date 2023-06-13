@@ -8,24 +8,24 @@
     <title>Notification</title>
   </head>
   <body class="p-0 m-0 border-box w-full min-h-screen flex flex-row justify-center items-center bg-[#f2f2f2] font-jakarta">
-    <main class="w-[60%] children:mx-[1.9375rem] bg-white h-[56.8rem] grid grid-rows-[2rem_50.5rem] gap-y-6 rounded-[0.9375rem] pt-10 mt-[3.9375rem] mb-[5.5625rem]">
+    <main class="w-[60%] mobile:w-[21.4375rem] children:mx-[1.9375rem] bg-white h-[56.8rem] grid grid-rows-[2rem_50.5rem] gap-y-6 rounded-[0.9375rem] pt-10 mt-[3.9375rem] mb-[5.5625rem]">
       <header class="flex flex-row items-center justify-between">
         <div class="flex flex-row items-center gap-2">
           <h2 class="font-jakarta text-[1.5rem] font-bold">Notifications</h2>
-          <div class="font-jakarta text-[1rem] leading-[1.25rem] font-bold bg-cat-blue rounded-[0.2rem] text-white w-[2rem] h-[1.5625rem] flex flex-row items-center justify-center" id="notify-counts">3</div>
+          <div class="font-jakarta text-[1rem] leading-[1.25rem] font-bold bg-cat-blue rounded-[0.2rem] text-white w-[2rem] h-[1.5625rem] flex flex-row items-center justify-center" id="notify-counts"></div>
         </div>
         <h3 class="font-jakarta text-[1rem] leading-[1.5625rem] font-medium text-shuttle-gray cursor-pointer hover:text-cat-blue"  id="mark">Mark all as read</h3>
       </header>
       <section class="flex flex-col gap-y-2 border-2 border-dashed children:p-4 border-[#E6C033]">
-        <div class="flex flex-row bg-polar">
+        <div class="flex flex-row bg-polar chat">
           <div class="w-[38.625rem] flex flex-row gap-4">
             <img src="./assets/images/avatar-mark-webber.webp" class="h-[2.8125rem] w-[2.8125rem]">
             <div class="">
-              <div class="flex flex-row items-center gap-1">
-                <p class="text-shuttle-gray">
+              <div class="flex flex-row items-center gap-1 mobile:flex mobile:flex-col">
+                <p class="text-shuttle-gray ">
                   <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Mark Webber</span>
-                  reacted to your recent post <span class="font-extrabold hover:text-cat-blue">My first tournament</span>
-                  <div class="w-2 h-2 rounded-full bg-carnation" ></div>
+                  reacted to your recent post <span class="font-extrabold hover:text-cat-blue hover:cursor-pointer">My first tournament</span>
+                  <div class="w-2 h-2 rounded-full bg-carnation unread-counts" ></div>
                 </p>
               </div>
               <div class="text-gull-gray">1m ago</div>
@@ -33,15 +33,15 @@
           </div>
         </div>
 
-        <div class="flex flex-row bg-polar">
+        <div class="flex flex-row bg-polar chat">
           <div class="w-[38.625rem] flex flex-row gap-4">
             <img src="./assets/images/avatar-angela-gray.webp" class="h-[2.8125rem] w-[2.8125rem]">
             <div class="">
-              <div class="flex flex-row items-center gap-1">
+              <div class="flex flex-row items-center gap-1 mobile:flex mobile:flex-col">
                 <p class="text-shuttle-gray">
                   <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Angela Gray</span>
-                   followed you <span class="font-extrabold hover:text-cat-blue">My first tournament</span>
-                  <div class="w-2 h-2 rounded-full bg-carnation" ></div>
+                   followed you <span class="font-extrabold cursor-pointer hover:text-cat-blue">My first tournament</span>
+                  <div class="w-2 h-2 rounded-full bg-carnation unread-counts" ></div>
                 </p>
               </div>
               <div class="text-gull-gray">5m ago</div>
@@ -49,15 +49,15 @@
           </div>
         </div>
 
-        <div class="flex flex-row bg-polar ">
+        <div class="flex flex-row bg-polar chat">
           <div class="w-[38.625rem] flex flex-row gap-4">
             <img src="./assets/images/avatar-jacob-thompson.webp" class="h-[2.8125rem] w-[2.8125rem]">
             <div class="">
-              <div class="flex flex-row items-center gap-1">
+              <div class="flex flex-row items-center gap-1 mobile:flex mobile:flex-col">
                 <p class="text-shuttle-gray">
                   <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Jacob Thompson</span>
-                  has joined your club <span class="font-extrabold hover:text-cat-blue">Chess club</span>
-                  <div class="w-2 h-2 rounded-full bg-carnation" ></div>
+                  has joined your club <span class="font-extrabold cursor-pointer hover:text-cat-blue">Chess club</span>
+                  <div class="w-2 h-2 rounded-full bg-carnation unread-counts" ></div>
                 </p>
               </div>
               <div class="text-gull-gray">1day ago</div>
@@ -69,7 +69,7 @@
           <div class="w-[38.625rem] flex flex-row gap-4">
             <img src="./assets/images/avatar-rizky-hasanuddin.webp" class="h-[2.8125rem] w-[2.8125rem]">
             <div class="flex flex-col gap-y-3">
-              <div class="flex flex-row items-center gap-1">
+              <div class="flex flex-row items-center gap-1 mobile:flex mobile:flex-col">
                 <p class="text-shuttle-gray">
                   <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Rizky Hasanuddin</span>
                   sent you a private
@@ -88,27 +88,27 @@
           </div>
         </div>
         
-        <div class="flex flex-row">
+        <div class="flex flex-row justify-between">
           <div class="w-[38.625rem] flex flex-row gap-4">
             <img src="./assets/images/avatar-kimberly-smith.webp" class="h-[2.8125rem] w-[2.8125rem]">
             <div class="flex flex-col gap-y-2">
-              <div class="flex flex-row items-center gap-1 ">
+              <div class="flex flex-row items-center gap-1 mobile:flex mobile:flex-col">
                 <p class="text-shuttle-gray">
                   <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Kimberly Smith</span>
-                  has joined your club <span class="font-extrabold hover:text-cat-blue">Chess club</span>
-                  <div class="w-2 h-2 rounded-full bg-carnation" ></div>
+                  has joined your club <span class="font-extrabold cursor-pointer hover:text-cat-blue">Chess club</span>
                 </p>
               </div>
               <div class="text-gull-gray">1day ago</div>
             </div>
           </div>
+          <img class="w-[3.5rem] " src="./assets/images/image-chess.webp"/>
         </div>
 
         <div class="flex flex-row ">
           <div class="w-[38.625rem] flex flex-row gap-4">
             <img src="./assets/images/avatar-nathan-peterson.webp" class="h-[2.8125rem] w-[2.8125rem]">
             <div class="flex flex-col gap-y-2">
-              <div class="flex flex-row items-center gap-1">
+              <div class="flex flex-row items-center gap-1 mobile:flex mobile:flex-col">
                 <p class="text-shuttle-gray">
                   <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Nathan Peterson</span>
                   reacted to your recent post <span class="font-extrabold cursor-pointer hover:text-cat-blue">5 end-game strategies to increase your win rate</span>
@@ -123,11 +123,10 @@
           <div class="w-[38.625rem] flex flex-row gap-4">
             <img src="./assets/images/avatar-anna-kim.webp" class="h-[2.8125rem] w-[2.8125rem]">
             <div class="flex flex-col gap-y-2">
-              <div class="flex flex-row items-center gap-1">
+              <div class="flex flex-row items-center gap-1 mobile:flex mobile:flex-col">
                 <p class="text-shuttle-gray">
                   <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Anna Kim</span>
                   left the group <span class="font-extrabold cursor-pointer hover:text-cat-blue">Chess club</span>
-                  <!-- <div class="w-2 h-2 rounded-full bg-carnation" ></div> -->
                 </p>
               </div>
               <div class="text-gull-gray">2 weeks ago</div>
@@ -136,6 +135,6 @@
         </div>
       </section>
     </main>
-  
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
