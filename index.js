@@ -1,8 +1,22 @@
 document.addEventListener('DOMContentLoaded',() =>{
 
+    //attaching eventlisteners to the unread-indicators
+    //to remove each unread-count or indicator
     const notifyCount = document.getElementById('notify-counts')
-    // const notifyH3 = document.createElement('h3')
-    // console.log(unreadCounts);
+    const unreadCounts = document.querySelectorAll('.unread-counts')
+    unreadCounts.forEach(unreadCount => {
+        unreadCount.classList.add('cursor-pointer');
+        
+        unreadCount.addEventListener('click', (event) => {
+            const currentTarget = event.currentTarget;
+            currentTarget.remove();
+            const chatBg = document.querySelector('.chat')
+            chatBg.style.backgroundColor = '';
+        });
+    })
+
+
+
     const updateNotifyCount =()=>{
         const unreadCounts = document.querySelectorAll('.unread-counts')
         const unreadArray = Array.from(unreadCounts)
