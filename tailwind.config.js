@@ -12,7 +12,7 @@ export default {
       'laptop': {'min':'770px'}      
     },
     fontFamily:{
-      'jakarta':['Plus Jakarta Sans','sans-serif']
+      'jakarta':['Plus Jakarta Sans', 'sans-serif']
     },
     colors:{
       'carnation': '#f65351',

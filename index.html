@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Notification</title>
   </head>
   <body class="p-0 m-0 border-box w-full min-h-screen flex flex-row  bg-[#f2f2f2] font-jakarta">
-    <main class="w-[60%] mobile:mt-0  mobile:h-full mobile:w-full mx-auto children:mx-[1.9375rem] bg-white h-[56.8rem]  grid grid-rows-[2rem_50.5rem] gap-y-6 rounded-[0.9375rem] pt-10 mt-[3.9375rem] mb-[5.5625rem]">
+    <main class="laptop:w-[45.625rem] mobile:mt-0  mobile:h-full mobile:w-full mx-auto children:mx-[1.9375rem] bg-white h-[56.8rem]  grid grid-rows-[2rem_50.5rem] gap-y-6 rounded-[0.9375rem] pt-10 mt-[3.9375rem] mb-[5.5625rem]">
       <header class="flex flex-row items-center justify-between">
         <div class="flex flex-row items-center gap-2">
           <h2 class="font-jakarta text-[1.5rem] font-bold">Notifications</h2>
@@ -16,122 +19,61 @@
         <h3 class="font-jakarta text-[1rem] leading-[1.5625rem] font-medium text-shuttle-gray cursor-pointer hover:text-cat-blue"  id="mark">Mark all as read</h3>
       </header>
       <section class="flex flex-col gap-y-2 border-2 border-dashed children:p-4 border-[#E6C033] mobile:children:w-[]">
-        <div class="flex flex-row bg-polar chat">
-          <div class="flex flex-row w-full gap-4 mobile:gap-2">
-            <img src="./assets/images/avatar-mark-webber.webp" class="h-[2.8125rem] w-[2.8125rem]">
-            <div class="">
-              <div class="flex flex-row items-center gap-1 mobile:gap-0 mobile:flex mobile:flex-row children:border-2 children:border-dashed">
-                <p class="text-left text-shuttle-gray">
-                  <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Mark Webber</span>
-                  reacted to your recent post <span class="font-extrabold hover:text-cat-blue hover:cursor-pointer">My first tournament</span>
-                  <div class="w-2 h-2 rounded-full bg-carnation unread-counts" ></div>
-                </p>
-              </div>
-              <div class="text-gull-gray">1m ago</div>
-            </div>
+        <div class="rounded-[0.3rem]  bg-polar mobile:h-[5.563rem] flex flex-row gap-2 mobile:gap-3 mobile:py-2 mobile:px-2 chat">
+          <img class="laptop:w-[2.813rem] laptop:h-[2.813rem] mobile:w-[2.438rem]  mobile:h-[2.438rem]" src="./assets/images/avatar-mark-webber.webp"/>
+          <div class="children:px-[0.1rem] font-jakarta">
+            <strong class="hover:text-cat-blue mobile:text-[0.875rem]">Mark webber</strong><span class="text-shuttle-gray mobile:text-[0.875rem]">reacted to your post</span><span class="font-bold mobile:gap-1 text-shuttle-gray mobile:text-[0.875rem]">My tournament today!</span>
+            <div class="font-jakarta  text-[#939CAD]">1m ago</div>
+            <div class="relative w-3 h-3 rounded-full left-[28rem] top-[-2.65rem] mobile:left-[13.8rem] mobile:top-[-2.5rem] bg-carnation unread-counts self-end"></div>
           </div>
         </div>
 
-        <div class="flex flex-row bg-polar chat">
-          <div class="flex flex-row w-full gap-4">
-            <img src="./assets/images/avatar-angela-gray.webp" class="h-[2.8125rem] w-[2.8125rem]">
-            <div class="">
-              <div class="flex flex-row items-center gap-1 mobile:flex mobile:flex-col">
-                <p class="text-shuttle-gray">
-                  <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Angela Gray</span>
-                   followed you <span class="font-extrabold cursor-pointer hover:text-cat-blue">My first tournament</span>
-                  <div class="w-2 h-2 rounded-full bg-carnation unread-counts" ></div>
-                </p>
-              </div>
-              <div class="text-gull-gray">5m ago</div>
-            </div>
+        <div class="rounded-[0.3rem]  bg-polar mobile:h-[5.563rem] flex flex-row gap-2 mobile:gap-3 mobile:py-4 mobile:px-6 chat">
+          <img class="laptop:w-[2.813rem] laptop:h-[2.813rem] mobile:w-[2.438rem]  mobile:h-[2.438rem]" src="./assets/images/avatar-angela-gray.webp"/>
+          <div class="children:px-[0.1rem] font-jakarta">
+            <strong class="hover:text-cat-blue mobile:text-[0.875rem]">Angela Gray</strong><span class="text-shuttle-gray mobile:text-[0.875rem]">followed you</span>
+            <div class="font-jakarta  text-[#939CAD] text-[0.875rem]">5m ago</div>
+            <div class="relative w-3 h-3 rounded-full left-[13rem] top-[-2.65rem] mobile:left-[12.8rem] mobile:top-[-2.5rem] bg-carnation unread-counts self-end"></div>
           </div>
         </div>
 
-        <div class="flex flex-row bg-polar chat ">
-          <div class="flex flex-row w-full gap-4">
-            <img src="./assets/images/avatar-jacob-thompson.webp" class="h-[2.8125rem] w-[2.8125rem]">
-            <div class="">
-              <div class="flex flex-row items-center gap-1 mobile:flex mobile:flex-col">
-                <p class="text-shuttle-gray">
-                  <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Jacob Thompson</span>
-                  has joined your club <span class="font-extrabold cursor-pointer hover:text-cat-blue">Chess club</span>
-                  <div class="w-2 h-2 rounded-full bg-carnation unread-counts" ></div>
-                </p>
-              </div>
-              <div class="text-gull-gray">1day ago</div>
-            </div>
-          </div>
-        </div>
         
-        <div class="flex flex-row">
-          <div class="w-full flex flex-row gap-4 border-2 border-dashed border-[#8F6F28]">
-            <img src="./assets/images/avatar-rizky-hasanuddin.webp" class="h-[2.8125rem] w-[2.8125rem]">
-            <div class="flex flex-col gap-y-3">
-              <div class="flex flex-row items-center gap-1 mobile:flex mobile:flex-col">
-                <p class="text-shuttle-gray">
-                  <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Rizky Hasanuddin</span>
-                  sent you a private
-                  <!-- <div class="w-2 h-2 rounded-full bg-carnation" ></div> -->
-                </p>
-              </div>
-              <div class="text-gull-gray">5days ago</div>
-              <div class="border-2 border-botticelli  h-[6.0625rem] hover:bg-link-water cursor-pointer">
-                <p class="p-4 text-[1rem] leading-[1.5625rem] text-shuttle-gray ">
-                  Hello, thanks for setting up the Chess Club.
-                  I’ve been a member for a few weeks now and
-                  I’m already having lots of fun and improving my game.
-                </p>
-              </div>
-            </div>
+        <div class="rounded-[0.3rem]  bg-polar mobile:h-[5.563rem] flex flex-row gap-2 mobile:gap-3 mobile:py-4 mobile:px-6 chat">
+          <img class="laptop:w-[2.813rem] laptop:h-[2.813rem] mobile:w-[2.438rem]  mobile:h-[2.438rem]" src="./assets/images/avatar-jacob-thompson.webp"/>
+          <div class="children:px-[0.1rem] font-jakarta ">
+            <strong class="hover:text-cat-blue mobile:text-[0.875rem]">Jacob Thompson</strong><span class="text-shuttle-gray mobile:text-[0.875rem]">has joined your group</span>
+            <span class="font-bold mobile:gap-1 text-cat-blue  mobile:text-[0.875rem]">Chess Club</span>
+            <div class="font-jakarta  text-[#939CAD] text-[0.875rem]">1day ago</div>
+            <div class="relative w-3 h-3 rounded-full left-[25rem] top-[-2.65rem] mobile:left-[9.3rem] mobile:top-[-2.5rem] bg-carnation unread-counts self-end"></div>
           </div>
-        </div>
-        
-        <div class="flex flex-row justify-between">
-          <div class="flex flex-row w-full gap-4">
-            <img src="./assets/images/avatar-kimberly-smith.webp" class="h-[2.8125rem] w-[2.8125rem]">
-            <div class="flex flex-col gap-y-2">
-              <div class="flex flex-row items-center gap-1 mobile:flex mobile:flex-col">
-                <p class="text-shuttle-gray">
-                  <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Kimberly Smith</span>
-                  has joined your club <span class="font-extrabold cursor-pointer hover:text-cat-blue">Chess club</span>
-                </p>
-              </div>
-              <div class="text-gull-gray">1day ago</div>
-            </div>
-          </div>
-          <img class="w-[3.5rem] " src="./assets/images/image-chess.webp"/>
         </div>
 
-        <div class="flex flex-row ">
-          <div class="flex flex-row w-full gap-4">
-            <img src="./assets/images/avatar-nathan-peterson.webp" class="h-[2.8125rem] w-[2.8125rem]">
-            <div class="flex flex-col gap-y-2">
-              <div class="flex flex-row items-center gap-1 mobile:flex mobile:flex-col">
-                <p class="text-shuttle-gray">
-                  <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Nathan Peterson</span>
-                  reacted to your recent post <span class="font-extrabold cursor-pointer hover:text-cat-blue">5 end-game strategies to increase your win rate</span>
-                </p>
-              </div>
-              <div class="text-gull-gray">2 weeks ago</div>
+        <div class="rounded-[0.3rem] laptop:h-[12rem] laptop:w-[41.875rem] bg-white mobile:h-[13.9375rem] flex flex-row gap-2 mobile:gap-3 mobile:py-4 mobile:px-6 chat">
+          <img class="laptop:w-[2.813rem] laptop:h-[2.813rem] mobile:w-[2.438rem]  mobile:h-[2.438rem]" src="./assets/images/avatar-rizky-hasanuddin.webp"/>
+          <div class="children:px-[0.1rem] font-jakarta border-2 children:mb-2">
+            <strong class="hover:text-cat-blue mobile:text-[0.875rem]">Rizky Hasanuddin</strong><span class="text-shuttle-gray mobile:text-[0.875rem]">sent you a private message</span>
+            <div class="font-jakarta text-[#939CAD] text-[0.875rem]">5days ago</div>
+            <div class=" border-2 border-[#DDE7EE] rounded-[0.5rem] mobile:mt-1 hover:bg-botticelli">
+              <p class="font-jakarta text-[#5E6778] p-2 mobile:text-[0.85rem] mobile:w-[14.4375rem]">
+                Hello, thanks for setting up the Chess Club.
+                I’ve been a member for a few weeks now and
+                I’m already having lots of fun and improving my game.
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="flex flex-row ">
-          <div class="flex flex-row w-full gap-4">
-            <img src="./assets/images/avatar-anna-kim.webp" class="h-[2.8125rem] w-[2.8125rem]">
-            <div class="flex flex-col gap-y-2">
-              <div class="flex flex-row items-center gap-1 mobile:flex mobile:flex-col">
-                <p class="text-shuttle-gray">
-                  <span class="cursor-pointer text-[1rem] leading-[1.5625rem] font-extrabold text-[#000] hover:text-cat-blue">Anna Kim</span>
-                  left the group <span class="font-extrabold cursor-pointer hover:text-cat-blue">Chess club</span>
-                </p>
-              </div>
-              <div class="text-gull-gray">2 weeks ago</div>
-            </div>
+        <div class="rounded-[0.3rem]  bg-white mobile:h-[5.563rem] flex flex-row gap-6 mobile:gap-3 mobile:py-4 mobile:px-6 chat">
+          <img class="laptop:w-[2.813rem] laptop:h-[2.813rem] mobile:w-[2.438rem]  mobile:h-[2.438rem]" src="./assets/images/avatar-kimberly-smith.webp"/>
+          <div class="children:px-[0.1rem] font-jakarta mobile:w-[12.1875rem]">
+            <strong class="hover:text-cat-blue mobile:text-[0.875rem]">Kimberly Smith</strong><span class="text-shuttle-gray mobile:text-[0.875rem]">commented on your picture</span>
+            <!-- <span class="font-bold mobile:gap-1 text-cat-blue ">Chess Club</span> -->
+            <div class="font-jakarta  text-[#939CAD] text-[0.875rem]">1week ago</div>
+            <!-- <div class="relative w-3 h-3 rounded-full left-[25rem] top-[-2.65rem] mobile:left-[9.3rem] mobile:top-[-2.5rem] bg-carnation unread-counts self-end"></div> -->
           </div>
+          <img class="laptop:w-[2.813rem] laptop:ml-auto laptop:h-[2.813rem] mobile:w-[2.438rem] mobile:h-[2.438rem] cursor-pointer" src="./assets/images/image-chess.webp" />
         </div>
+
       </section>
     </main>
     <script type="module" src="./index.js"></script>
