@@ -894,6 +894,10 @@ video {
     margin-top: 0.25rem;
   }
 
+  .mobile\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .mobile\:h-\[13\.9375rem\] {
     height: 13.9375rem;
   }
