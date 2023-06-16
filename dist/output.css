@@ -631,6 +631,14 @@ video {
   grid-template-rows: 2rem 50.5rem;
 }
 
+.grid-rows-\[1\.8rem_50\.5rem\] {
+  grid-template-rows: 1.8rem 50.5rem;
+}
+
+.grid-rows-\[1\.7rem_50\.5rem\] {
+  grid-template-rows: 1.7rem 50.5rem;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -748,6 +756,10 @@ video {
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .font-jakarta {
@@ -898,6 +910,26 @@ video {
     margin-bottom: 1rem;
   }
 
+  .mobile\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .mobile\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .mobile\:mt-\[\] {
+    margin-top: ;
+  }
+
+  .mobile\:mt-\[-\] {
+    margin-top: -;
+  }
+
+  .mobile\:mt-\[-0\.5rem\] {
+    margin-top: -0.5rem;
+  }
+
   .mobile\:h-\[13\.9375rem\] {
     height: 13.9375rem;
   }
@@ -934,6 +966,58 @@ video {
     height: ;
   }
 
+  .mobile\:h-\[49\.\] {
+    height: 49.;
+  }
+
+  .mobile\:h-\[49\.93\] {
+    height: 49.93;
+  }
+
+  .mobile\:h-\[49\.9375rem\] {
+    height: 49.9375rem;
+  }
+
+  .mobile\:h-\[rem\] {
+    height: rem;
+  }
+
+  .mobile\:h-\[50rem\] {
+    height: 50rem;
+  }
+
+  .mobile\:h-\[52rem\] {
+    height: 52rem;
+  }
+
+  .mobile\:h-\[54rem\] {
+    height: 54rem;
+  }
+
+  .mobile\:h-\[53rem\] {
+    height: 53rem;
+  }
+
+  .mobile\:h-\[51rem\] {
+    height: 51rem;
+  }
+
+  .mobile\:h-\[5\.rem\] {
+    height: 5.rem;
+  }
+
+  .mobile\:h-\[5\.6rem\] {
+    height: 5.6rem;
+  }
+
+  .mobile\:h-\[5\.56rem\] {
+    height: 5.56rem;
+  }
+
+  .mobile\:h-\[5\.561rem\] {
+    height: 5.561rem;
+  }
+
   .mobile\:w-\[12\.1875rem\] {
     width: 12.1875rem;
   }
@@ -956,6 +1040,14 @@ video {
 
   .mobile\:w-\[rem\] {
     width: rem;
+  }
+
+  .mobile\:w-\[14rem\] {
+    width: 14rem;
+  }
+
+  .mobile\:w-\[18rem\] {
+    width: 18rem;
   }
 
   .mobile\:gap-1 {
@@ -1028,6 +1120,10 @@ video {
     margin-top: 3.9375rem;
   }
 
+  .laptop\:grid {
+    display: grid;
+  }
+
   .laptop\:h-\[12rem\] {
     height: 12rem;
   }
@@ -1062,5 +1158,9 @@ video {
 
   .laptop\:w-\[45\.625rem\] {
     width: 45.625rem;
+  }
+
+  .laptop\:grid-rows-\[2rem_50\.5rem\] {
+    grid-template-rows: 2rem 50.5rem;
   }
 }
